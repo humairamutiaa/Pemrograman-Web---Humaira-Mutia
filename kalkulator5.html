@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styletugas5.css">
+</head>
+<body>
+    <div id="date-display" align="center">
+        <script type="text/javascript">
+            var d = new Date();
+            d.setFullYear("2024");
+            document.write(d);
+        </script>
+    </div>
+    <div class="container">
+        <div class="header"><marquee><h1>KALKULATOR</h1></marquee></div>
+    <div class="container" align="center">
+        <a class="one" href="home5.html">HOME</a>
+        <a class="two" href="hobby5.html">HOBBY</a>
+        <a class="three" href="gallery5.html">GALLERY</a>
+        <a class="four" href="kesimpulan5.html">KESIMPULAN</a>
+        <a class="five" href="kalkulator5.html">KALKULATOR</a>
+</div>
+
+    <div class="content">
+        <div class="temp">
+            <div class="calc">
+                <form>
+                     <div class="tampilan">
+                        <input type="text" name="tampilan">
+    </div>
+    <div>
+        <input type="button" value="AC" onclick="tampilan.value = '' " class="op">
+        <input type="button" value="DE" onclick="tampilan.value = tampilan.value.toString().slice(0,-1)" class="op">
+        <input type="button" value="." onclick="tampilan.value += '.' " class="op">
+        <input type="button" value="/" onclick="tampilan.value += '/' " class="op">
+    </div>
+    <div>
+        <input type="button" value="7" onclick="tampilan.value += '7' "> 
+        <input type="button" value="8" onclick="tampilan.value += '8' ">
+        <input type="button" value="9" onclick="tampilan.value += '9' ">
+        <input type="button" value="*" onclick="tampilan.value += '*' " class="op">
+    </div>
+    <div>
+        <input type="button" value="4" onclick="tampilan.value += '4' ">
+        <input type="button" value="5" onclick="tampilan.value += '5' ">
+        <input type="button" value="6" onclick="tampilan.value += '6' ">
+        <input type="button" value="-" onclick="tampilan.value += '-' " class="op">
+    </div>
+    <div>
+        <input type="button" value="1" onclick="tampilan.value += '1' ">
+        <input type="button" value="2" onclick="tampilan.value += '2' ">
+        <input type="button" value="3" onclick="tampilan.value += '3' ">
+        <input type="button" value="+" onclick="tampilan.value += '+' " class="op">
+    </div>
+    <div>
+        <input type="button" value="0" onclick="tampilan.value += '0' ">
+        <input type="button" value="00" onclick="tampilan.value += '00' ">
+        <input type="button" value="=" onclick="tampilan.value = eval(tampilan.value)" class="equal op">
+    </div>
+    <div class="content"></div>
+    <div class="footer" align="center">&nbsp; &copy;2024 by Humaira Mutia</div>
+</body>
+</html>

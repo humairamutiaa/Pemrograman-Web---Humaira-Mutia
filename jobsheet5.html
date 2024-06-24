@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>UTS PEMOGRAMAN WEB</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="header"><img src="ftunp.png" class="logo"><h1>UTS PEMROGRAMAN WEB</h1></div>
+            </div>
+            <div class="row">
+                <div class="navigation">
+                    <a class="one" href="beranda.html">BERANDA</a>&nbsp; &nbsp;
+                    <a class="two" href="pendidikanformal.html">PENDIDIKAN FORMAL</a>&nbsp; &nbsp;
+                    <a class="three" href="pendidikan nonformal.html">PENDIDIKAN NON FORMAL</a>&nbsp; &nbsp;
+                    <a class="four" href="pengalaman organisasi.html">PENGALAMAN ORGANISASI</a>&nbsp; &nbsp;
+                    <a class="five" href="galeri.html">GALLERY</a>&nbsp; &nbsp;
+                    <a class="six" href="kalkulatorr.html">KALKULATOR</a>&nbsp; &nbsp;
+                </div>
+            </div>
+            <div class="row">
+                <div class="sidebar">
+                    <ul type="disc">
+                        <li><small><a class="job1" href="jobsheet1.html">JOB SHEET 1</a></li>
+                        <br><li><a class="job2" href="jobsheet2.html">JOB SHEET 2</a></li>
+                        <br><li><a class="job3" href="jobsheet3.html">JOB SHEET 3</a></li></small>
+                    </ul>
+                    <div id="datetime"></div>
+                    <script type="text/javascript">
+                        function displayDateTime() {
+                            var d = new Date();
+                            var weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+                            var monthname = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                            var hours = d.getHours();
+                            var minutes = d.getMinutes();
+                            var seconds = d.getSeconds();
+                            var ampm = hours >= 12 ? 'PM' : 'AM';
+                            hours = hours % 12;
+                            hours = hours ? hours : 12;
+                            minutes = minutes < 10 ? '0' + minutes : minutes;
+                            seconds = seconds < 10 ? '0' + seconds : seconds;
+                            var dateTimeStr = weekday[d.getDay()] + ", " + d.getDate() + " " + monthname[d.getMonth()] + " " + d.getFullYear() + " " + hours + ':' + minutes + ':' + seconds + ' ' + ampm;
+                            document.getElementById("datetime").innerHTML = dateTimeStr;
+                        }
+                    
+                        displayDateTime();
+                    
+                        setInterval(displayDateTime, 1000);
+                    </script>
+                </div>
+                <div class="content">
+                    <div class="left-column">
+                        <a href="latihan5.1.html">Latihan 1</a>
+                        <br>
+                        <a href="latihan5.2.html">Latihan 2</a>
+                        <br>
+                        <a href="latihan5.3.html">Latihan 3</a>
+                        <br>
+                        <a href="latihan5.4.html">Latihan 4</a>
+                        <br>
+                        <a href="latihan5.5.html">Latihan 5</a>
+                    </div>
+                    <div class="right-column">
+                        <a href="latihan5.6.html">Latihan 6</a>
+                        <br>
+                        <a href="latihan5.7.html">Latihan 7</a>
+                        <br>
+                        <a href="latihan5.8.html">Latihan 8</a>
+                        <br>
+                        <a href="latihan5.9.html">Latihan 9</a>
+                        </div>
+                </div>
+               <div class="sidebar">
+                    <ul type="disc">
+                        <li><small><a class="job4" href="jobsheet4.html">JOB SHEET 4</a></li>
+                       <br><li><a class="job5" href="jobsheet5.html">JOB SHEET 5</a></li></small>
+                    </ul><sup>
+                        <div id="sosmed">
+                        <a href="https://wa.me/6285319053200"><img border="0" src="waremovebg.png" width="75" height="75"></a> 
+                        <a href="https://www.instagram.com/humairamutiaa?igsh=M3c3ZXU1YmRldGpr"><img border="0" src="instagramremovebg.png" width="75" height="75"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer" class="bawah" align="center">23343069-Humaira Mutia-Informatika-Teknik Elektronika-Fakultas Teknik-Universitas Negeri Padang
+                </div>
+        </div>
+    </body>
+</html>

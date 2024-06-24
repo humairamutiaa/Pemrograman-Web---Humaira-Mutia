@@ -1,0 +1,46 @@
+body {
+	background: linear-gradient(to left, #d65286, #e188ac);
+}
+
+.container {
+	width: 900px;
+	margin: auto;
+	box-shadow: 0px 10px 30px -10px;
+}
+
+.header {
+	background-color: rgb(red, green, blue);
+	padding: 30px;
+	border-radius: 20px 20px 0px 0px;
+	text-align: center;
+}
+
+.navigasi {
+	background-color: rgb(red, green, blue);
+	padding: 30px;
+	font-size: larger;
+}
+
+.content {
+	background-color: rgb(red, green, blue);
+	padding: 70px;
+	text-align: center;
+}
+
+.center-text {
+	display: inline-block;
+}
+
+.footer {
+	background-color:  #efd9e2;
+	padding: 10px;
+	border-radius: 20px 20px 0px 0px;
+	text-align: center;
+}
+
+a.one:visited {color: #000000;}
+a.one:hover {font-size: 80%;}
+a.two:visited {color: #000000;}
+a.two:hover {font-size: 80%;}
+a.three:visited {color: #000000;}
+a.three:hover {font-size: 80%}
